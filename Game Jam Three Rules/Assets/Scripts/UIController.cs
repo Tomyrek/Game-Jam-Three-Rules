@@ -9,7 +9,9 @@ public class UIController : MonoBehaviour
 
     public Image heart1, heart2, heart3;
 
-    public Sprite heartFull,  heartEmpty, heartHalf;
+    public Sprite heartFull, heartEmpty, heartHalf;
+
+    public Text gemText;
 
     private void Awake()
     {
@@ -18,7 +20,7 @@ public class UIController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        UpdateGemCount();
     }
 
     // Update is called once per frame
@@ -30,7 +32,7 @@ public class UIController : MonoBehaviour
     {
         switch (PlayerHealthController.instance.currentHealth)
         {
-            
+
             case 6:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartFull;
@@ -49,7 +51,7 @@ public class UIController : MonoBehaviour
                 heart3.sprite = heartEmpty;
 
                 break;
-            
+
             case 3:
                 heart1.sprite = heartFull;
                 heart2.sprite = heartHalf;
@@ -85,5 +87,10 @@ public class UIController : MonoBehaviour
 
                 break;
         }
+    }
+
+    public void UpdateGemCount()
+    {
+        gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 }
