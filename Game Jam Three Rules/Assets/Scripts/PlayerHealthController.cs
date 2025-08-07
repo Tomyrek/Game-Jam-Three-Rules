@@ -64,6 +64,8 @@ public class PlayerHealthController : MonoBehaviour
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, .3f);
 
                 PlayerController.instance.KnockBack();
+
+                AudioManager.instance.PlaySFX(9);
             }
 
             UIController.instance.UpdateHealthDisplay();
