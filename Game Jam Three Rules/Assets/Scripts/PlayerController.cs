@@ -39,59 +39,66 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (knockBackCounter <= 0)
+        if (!PauseMenu.instance.isPaused)
         {
 
-            theRB.linearVelocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.linearVelocity.y);
 
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
 
-            if (isGrounded)
+            if (knockBackCounter <= 0)
             {
-                canDoubleJump = true;
-            }
 
-            if (Input.GetButtonDown("Jump"))
-            {
+                theRB.linearVelocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.linearVelocity.y);
+
+                isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+
                 if (isGrounded)
                 {
-                    theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
-
-                    AudioManager.instance.PlaySFX(10);
+                    canDoubleJump = true;
                 }
-                else
+
+                if (Input.GetButtonDown("Jump"))
                 {
-                    if (canDoubleJump)
+                    if (isGrounded)
                     {
                         theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
-                        canDoubleJump = false;
 
                         AudioManager.instance.PlaySFX(10);
                     }
-                }
-            }
+                    else
+                    {
+                        if (canDoubleJump)
+                        {
+                            theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
+                            canDoubleJump = false;
 
-            if (theRB.linearVelocity.x < 0)
-            {
-                theSR.flipX = true;
-            }
-            else if (theRB.linearVelocity.x > 0)
-            {
-                theSR.flipX = false;
-            }
-        }
-        else
-        {
-            knockBackCounter -= Time.deltaTime;
-            //forcing-pushing player to the side he is facing (! not true)
-            if (!theSR.flipX)
-            {
-                theRB.linearVelocity = new Vector2(-knockBackForce, theRB.linearVelocity.y);
+                            AudioManager.instance.PlaySFX(10);
+                        }
+                    }
+                }
+
+                if (theRB.linearVelocity.x < 0)
+                {
+                    theSR.flipX = true;
+                }
+                else if (theRB.linearVelocity.x > 0)
+                {
+                    theSR.flipX = false;
+                }
             }
             else
             {
-                theRB.linearVelocity = new Vector2(knockBackForce, theRB.linearVelocity.y);
+                knockBackCounter -= Time.deltaTime;
+                //forcing-pushing player to the side he is facing (! not true)
+                if (!theSR.flipX)
+                {
+                    theRB.linearVelocity = new Vector2(-knockBackForce, theRB.linearVelocity.y);
+                }
+                else
+                {
+                    theRB.linearVelocity = new Vector2(knockBackForce, theRB.linearVelocity.y);
+                }
             }
+
         }
 
         anim.SetBool("isGrounded", isGrounded);
