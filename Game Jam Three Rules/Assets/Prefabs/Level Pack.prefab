@@ -125,7 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitToRespawn: 2
   gemsCollected: 0
-  levelToLoad: Main_Menu
+  levelToLoad: Level Select
+  timeInLevel: 0
 --- !u!1 &610393362812909597
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +715,7 @@ Transform:
   m_GameObject: {fileID: 5893968437808933805}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.145355, y: -0.034751773, z: -0.24212997}
+  m_LocalPosition: {x: 164.71, y: 5.981, z: -0.24212997}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1291,7 +1292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06137ceafaea7334ead05a88faba1042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSelect: 
+  levelSelect: Level Select
   mainMenu: Main_Menu
   pauseScreen: {fileID: 2485314511011288001}
   isPaused: 0
@@ -2014,11 +2015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8686009029926527283, guid: 6e033d228cc14114994f98704cff2a12, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3205662
+      value: 88.24
       objectReference: {fileID: 0}
     - target: {fileID: 8686009029926527283, guid: 6e033d228cc14114994f98704cff2a12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1290852
+      value: -3.175
       objectReference: {fileID: 0}
     - target: {fileID: 8686009029926527283, guid: 6e033d228cc14114994f98704cff2a12, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2115,8 +2116,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8364116031630463328}
     - target: {fileID: 4953753509528332010, guid: 4b0db0c32ad539742a5e7873f9d7d04e, type: 3}
+      propertyPath: maxHeight
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4953753509528332010, guid: 4b0db0c32ad539742a5e7873f9d7d04e, type: 3}
       propertyPath: minHeight
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4953753509528332010, guid: 4b0db0c32ad539742a5e7873f9d7d04e, type: 3}
       propertyPath: farBackground

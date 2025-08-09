@@ -26,9 +26,15 @@ public class AudioManager : MonoBehaviour
     {
         soundEffects[soundToPlay].Stop();
 
-//Random pojacavanje zvukova od 0.9 do 1.1
+        //Random pojacavanje zvukova od 0.9 do 1.1
         soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
 
         soundEffects[soundToPlay].Play();
+    }
+
+    public void PlayLevelVictory()
+    {
+        bgm.Stop();
+        levelEndMusic.Play();
     }
 }

@@ -19424,29 +19424,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2143977018903839239, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: maxHeight
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2143977018903839239, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: minHeight
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3524184809920741268, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 88.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3524184809920741268, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.175
-      objectReference: {fileID: 0}
-    - target: {fileID: 4521926614830575443, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 164.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4521926614830575443, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.981
+    - target: {fileID: 8699919381342165725, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8702095883314001211, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
       propertyPath: m_Name

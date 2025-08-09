@@ -48706,6 +48706,10 @@ PrefabInstance:
       propertyPath: minHeight
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3231765988700684102, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4521926614830575443, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 157.94
@@ -48730,6 +48734,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.6320754
       objectReference: {fileID: 0}
+    - target: {fileID: 6274645481265498137, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6763827114203002063, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -48737,6 +48745,10 @@ PrefabInstance:
     - target: {fileID: 7354108602523989809, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
       propertyPath: m_Pitch
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678163145133883276, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
+      propertyPath: levelToLoad
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 8702095883314001211, guid: 257708a3bb09fd047ade2ba99d6bf566, type: 3}
       propertyPath: m_Name
