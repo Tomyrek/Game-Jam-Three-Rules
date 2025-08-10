@@ -98,7 +98,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638901790562467883
+  platformSettingsDirtyTick: 638904681586953547
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -279,7 +279,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 121
+      y: 120
       width: 23
       height: 17
     spriteID: e6442a30271636144a612f4d04c069b0
