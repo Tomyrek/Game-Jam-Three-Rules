@@ -17,6 +17,8 @@ public class EnemyController : MonoBehaviour
     public float moveTime, waitTime;
     private float moveCount, waitCount;
 
+    public GameObject deathEffect;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -78,6 +80,42 @@ public class EnemyController : MonoBehaviour
             }
             anim.SetBool("isMoving", false);
         }
-        
+
+    }
+
+
+/////Nova fuknckija koja se poziva nakon skoka na neprijatelja
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Proveri da li je igrač skočio odozgo (da li pada prema dolje)
+            Rigidbody2D playerRB = other.GetComponent<Rigidbody2D>();
+            if (playerRB != null && playerRB.linearVelocity.y < 0)
+            {
+                // Obavesti RuleManager da je neprijatelj ubijen
+                if (RuleManager.instance != null)
+                {
+                    RuleManager.instance.OnEnemyKilled();
+                }
+
+                // Ovo je tvoj postojeći kod za bounce effect
+                PlayerController.instance.Bounce();
+
+                // Kreiraj death effect ako postoji, ali ograniči broj instanci
+                if (deathEffect != null && !gameObject.name.Contains("Dying"))
+                {
+                    GameObject effect = Instantiate(deathEffect, transform.position, transform.rotation);
+                    // Uništi effect nakon 2 sekunde da ne zatrpava hierarchy
+                    Destroy(effect, 2f);
+                }
+
+                // Označi neprijatelja kao umirući da sprečiš multiple triggerovanje
+                gameObject.name += "_Dying";
+
+                // Uništi neprijatelja
+                Destroy(gameObject, 0.1f);
+            }
+        }
     }
 }

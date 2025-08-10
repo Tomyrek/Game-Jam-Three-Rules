@@ -63,7 +63,14 @@ public class PlayerController : MonoBehaviour
                         theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
 
                         AudioManager.instance.PlaySFX(10);
+
+                        //Nov dodatak
+                        if (RuleManager.instance != null)
+                        {
+                            RuleManager.instance.OnJump();
+                        }
                     }
+
                     else
                     {
                         if (canDoubleJump)
@@ -72,6 +79,11 @@ public class PlayerController : MonoBehaviour
                             canDoubleJump = false;
 
                             AudioManager.instance.PlaySFX(10);
+
+                            if (RuleManager.instance != null)
+                            {
+                                RuleManager.instance.OnJump();
+                            }
                         }
                     }
                 }

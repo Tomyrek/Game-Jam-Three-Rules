@@ -46,6 +46,11 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
 
+        if (RuleManager.instance != null) //novo, restart pravila kada se igrac respawnuje
+        { 
+            RuleManager.instance.ResetRules();
+        }
+
         UIController.instance.FadeFromBlack();
 
         PlayerController.instance.gameObject.SetActive(true);

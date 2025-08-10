@@ -48,6 +48,7 @@ public class UIController : MonoBehaviour
                 shouldFadeFromBlack = false;
             }
         }
+        
 
     }
     public void UpdateHealthDisplay()
