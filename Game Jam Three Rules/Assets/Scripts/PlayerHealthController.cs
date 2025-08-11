@@ -83,4 +83,21 @@ public class PlayerHealthController : MonoBehaviour
         }
         UIController.instance.UpdateHealthDisplay();
     }
+
+    //nova funkcija za platforme koje se krecu
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Platform")
+        {
+            transform.parent = other.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Platform")
+        {
+            transform.parent = null;
+        }
+    }
 }

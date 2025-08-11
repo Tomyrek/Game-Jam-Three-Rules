@@ -21272,6 +21272,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6595369574496557817, guid: 0fae709b779293b47a91bf433e6cf6ed, type: 3}
+      propertyPath: maxJumps
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595369574496557817, guid: 0fae709b779293b47a91bf433e6cf6ed, type: 3}
       propertyPath: rule1Text
       value: 
       objectReference: {fileID: 1010211171}
@@ -21377,6 +21381,10 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2702234603391741768, guid: ef337eddc5553a5478158e3b92eca3f4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 588
+      objectReference: {fileID: 0}
     - target: {fileID: 3894448817557209586, guid: ef337eddc5553a5478158e3b92eca3f4, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
@@ -21396,6 +21404,10 @@ PrefabInstance:
     - target: {fileID: 7058313286623102626, guid: ef337eddc5553a5478158e3b92eca3f4, type: 3}
       propertyPath: m_Name
       value: RuleDisplayPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8009447177164524916, guid: ef337eddc5553a5478158e3b92eca3f4, type: 3}
+      propertyPath: m_Text
+      value: Max Jumps-
       objectReference: {fileID: 0}
     - target: {fileID: 8009447177164524916, guid: ef337eddc5553a5478158e3b92eca3f4, type: 3}
       propertyPath: m_RaycastTarget

@@ -1,20 +1,20 @@
 using UnityEngine;
 
-public class Level2Rules : MonoBehaviour
+public class Level4Rules : MonoBehaviour
 {
     void Start()
     {
-        // Postavi pravila za Level 2
+        // Postavi pravila za Level 4
         if (RuleManager.instance != null)
         {
-            // Level 2: 
-            RuleManager.instance.canMoveLeft = true;           
-            RuleManager.instance.canKillEnemies = true;       
+            // Level 4: 
+            RuleManager.instance.canMoveLeft = false;           
+            RuleManager.instance.canKillEnemies = true;        
             RuleManager.instance.canStand = false;             
-            RuleManager.instance.canJumpMoreThanLimit = false; 
+            RuleManager.instance.canJumpMoreThanLimit = true; 
             RuleManager.instance.canEnterForbiddenZone = false;
             
-            RuleManager.instance.maxJumps = 18;
+            
             RuleManager.instance.standingTimeLimit = 0.5f; 
         }
         else

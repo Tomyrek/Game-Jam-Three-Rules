@@ -180,12 +180,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -336,12 +344,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5795,8 +5819,8 @@ Tilemap:
   - first: {x: -3, y: -4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6415,8 +6439,8 @@ Tilemap:
   - first: {x: -3, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 12
-      m_TileSpriteIndex: 17
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17894,15 +17918,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 47dd6d2bf4bafd04199a6f23fd30e899, type: 2}
-  - m_RefCount: 20
+  - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: 76ca8bbedff1b954a93bb7bbbb5bd6d1, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 59064468498df4b468f7521b0defaf3e, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 7d9d9948d9d2d154ab4b734efe56f33c, type: 2}
-  - m_RefCount: 46
+  - m_RefCount: 47
     m_Data: {fileID: 11400000, guid: 201b12ae422c8bb44b54700786b1b9d8, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 148ba27f81e5fa449be8e6b37f65803f, type: 2}
@@ -17918,7 +17942,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: dac901db3f64f1647837df5dc0a289e2, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a4f7b59d404ff484e99799e67564b626, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 7c525a3947009be439ba57c2728f0738, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 7c17233d58f3fe541aa204506a920935, type: 2}
@@ -17939,15 +17963,15 @@ Tilemap:
   - m_RefCount: 1613
     m_Data: {fileID: 11400000, guid: eb97b77f146c28e488b2793ddf1ab953, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 4
+  - m_RefCount: 3
     m_Data: {fileID: 1074407837, guid: 51713572857697e45b33467ae01b2031, type: 3}
-  - m_RefCount: 20
+  - m_RefCount: 21
     m_Data: {fileID: -1162812023, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1683007783, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -875012857, guid: 51713572857697e45b33467ae01b2031, type: 3}
-  - m_RefCount: 46
+  - m_RefCount: 47
     m_Data: {fileID: 1881870139, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -2020542419, guid: 51713572857697e45b33467ae01b2031, type: 3}
@@ -17973,7 +17997,7 @@ Tilemap:
     m_Data: {fileID: -1952670649, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -172479854, guid: 51713572857697e45b33467ae01b2031, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 4
     m_Data: {fileID: 780006004, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1105952559, guid: 51713572857697e45b33467ae01b2031, type: 3}
@@ -18202,19 +18226,39 @@ PrefabInstance:
       objectReference: {fileID: 455718270}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: isLevel
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: bestTime
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: isLocked
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelName
-      value: Coming soon
+      value: Coming Soon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
-      value: Level6
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
-      value: Level5
+      value: Level4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18536,36 +18580,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -3, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -2, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -8, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -18599,8 +18613,8 @@ Tilemap:
   - first: {x: -3, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 1
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -18609,18 +18623,8 @@ Tilemap:
   - first: {x: -2, y: -3, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 11
+      m_TileIndex: 14
       m_TileSpriteIndex: 14
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -18886,6 +18890,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -9, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -8, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -19016,6 +19030,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -9, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -8, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 11
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -7, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -19084,12 +19118,12 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 09c0845d8e5d9eb4fb712b0c7895ebb5, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7b5f627da899f33408677c38b797b6eb, type: 2}
-  - m_RefCount: 9
+  - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 3ccd00c2830514d4291fd14635a9e6ec, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 81d527fe12a340d4caed84175b118ae9, type: 2}
-  - m_RefCount: 5
-    m_Data: {fileID: 11400000, guid: 7940e8ece290c0e4ab5ac2afaa269622, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c03af83bbe1a4ad4ba5799f047a0b018, type: 2}
   - m_RefCount: 5
@@ -19100,31 +19134,31 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 82d3aa0b6f3a18246bd5cfe2bc9101ac, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: cfd9ad1783f18194a81e4745a6f1bd9b, type: 2}
+  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: 40319dca19fc7494c8fa36c01d060a24, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4cf8f36386a912149aacc53df2f87e51, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 40319dca19fc7494c8fa36c01d060a24, type: 2}
-  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 201b12ae422c8bb44b54700786b1b9d8, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7940e8ece290c0e4ab5ac2afaa269622, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: ccdb8c739aa03f34098609182d813422, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 20
     m_Data: {fileID: 2126020482, guid: 51713572857697e45b33467ae01b2031, type: 3}
-  - m_RefCount: 5
-    m_Data: {fileID: -1951298826, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 9
+  - m_RefCount: 3
+    m_Data: {fileID: -371701785, guid: 51713572857697e45b33467ae01b2031, type: 3}
+  - m_RefCount: 10
     m_Data: {fileID: 1962575359, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2135373965, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 2118323043, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -371701785, guid: 51713572857697e45b33467ae01b2031, type: 3}
+    m_Data: {fileID: 599878010, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -1316571409, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 2
@@ -19140,11 +19174,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1881870139, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 599878010, guid: 51713572857697e45b33467ae01b2031, type: 3}
+    m_Data: {fileID: -1951298826, guid: 51713572857697e45b33467ae01b2031, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -517925732, guid: 51713572857697e45b33467ae01b2031, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 56
+  - m_RefCount: 55
     m_Data:
       e00: 1
       e01: 0
@@ -19163,13 +19197,13 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 56
+  - m_RefCount: 55
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -8, y: -5, z: 0}
-  m_Size: {x: 15, y: 14, z: 1}
+  m_Origin: {x: -9, y: -5, z: 0}
+  m_Size: {x: 16, y: 14, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -19528,6 +19562,107 @@ Transform:
   - {fileID: 1463526010}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &914459967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914459968}
+  - component: {fileID: 914459971}
+  - component: {fileID: 914459970}
+  - component: {fileID: 914459969}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &914459968
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914459967}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1919763540}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &914459969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914459967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &914459970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914459967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &914459971
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914459967}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!114 &1024946487 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
@@ -19846,12 +19981,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19935,12 +20086,20 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: Level2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20576,7 +20735,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelName
-      value: Boss Level4
+      value: Fourth Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
@@ -20585,6 +20752,10 @@ PrefabInstance:
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20653,7 +20824,11 @@ PrefabInstance:
       objectReference: {fileID: 506694892}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: isLevel
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: bestTime
+      value: 9999
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: isLocked
@@ -20664,16 +20839,31 @@ PrefabInstance:
       value: Coming Soon
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 9999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
-      value: Level5
+      value: Level Select
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: Level4
       objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1112468477954025469, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 914459968}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
 --- !u!114 &1778689592 stripped
@@ -20769,12 +20959,20 @@ PrefabInstance:
       value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20862,12 +21060,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20987,12 +21193,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: levelName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: targetTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21064,12 +21286,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21141,12 +21375,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: totalGems
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToLoad
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
       propertyPath: levelToCheck
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7313846253327959881, guid: c8b4a58604a98a746b0e7190625a3daf, type: 3}
+      propertyPath: gemsCollected
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
